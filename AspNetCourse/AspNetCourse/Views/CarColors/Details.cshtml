@@ -1,0 +1,34 @@
+﻿@model AspNetCourse.Models.CarColor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CarColor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.idCar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idCar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idColor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { idCar = Model.idCar, idColor = Model.idColor }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
